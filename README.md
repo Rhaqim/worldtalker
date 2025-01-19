@@ -14,6 +14,9 @@ Both services run in Docker containers and are orchestrated using Docker Compose
 ```bash
 .
 ├── client/                   # Go client source code
+│   ├── service/              # Client application service folder
+│   │   ├── translate.go      # Translation service
+│   │   ├── websocket.go      # Websocket service
 │   ├── main.go               # Entry point for the Go client
 │   ├── go.mod                # Go module file
 │   ├── go.sum                # Dependency lock file
