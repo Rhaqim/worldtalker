@@ -90,10 +90,16 @@ The Go client communicates with the server using the translate.proto definition 
 
 The client sends a translation request to the server with the following parameters:
 
-- `text`: The text to be translated.
-- `source_lang`: The source language of the text.
-- `target_lang`: The target language to translate the text to.
+- `message`: The text to be translated.
+- `language_source`: The source language of the text.
+- `language_target`: The target language to translate the text to.
 
 ### Translation Response
 
 The server responds with the translated text.
+
+## Testing
+
+You can test the application on postman following the link below:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/warped-capsule-709231/workspace/worldtalker/collection/678d06983aee4976d23bbf8d?action=share&creator=17061476)
