@@ -10,10 +10,6 @@ __pycache__/
 # Ignore Pytest cache
 .pytest_cache/
 
-# Ignore Poetry specific files
-poetry.lock
-*.toml
-
 # Golang project
 # Ignore Go build files
 bin/
