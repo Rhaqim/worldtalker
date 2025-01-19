@@ -1,4 +1,4 @@
-# gRPC Translation Service
+# WorldTalker Translation Service
 
 This project consists of a **gRPC-based Translation Service** with two components:  
 
