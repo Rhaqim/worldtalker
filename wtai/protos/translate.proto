@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package translate;
+
+// The request message containing the string to be translated.
+message TranslateRequest {
+    string message = 1;
+    string language_source = 2;
+    string language_target = 3;
+}
+
+// The response message containing the translated string and metadata.
+message TranslateResponse {
+    string translated_message = 1;
+    string metadata = 2;
+}
+
+// The translation service definition.
+service Translator {
+    // Sends a string message and gets back a translated string and metadata.
+    rpc Translate(TranslateRequest) returns (TranslateResponse);
+}

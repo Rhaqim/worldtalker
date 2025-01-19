@@ -1,0 +1,25 @@
+services:
+  client:
+    build:
+      context: ./wtbackend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    environment:
+      - SERVER_HOST=server
+      - SERVER_PORT=50051
+
+  server:
+    build:
+      context: ./wtai
+      dockerfile: Dockerfile
+    ports:
+      - "50051:50051"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

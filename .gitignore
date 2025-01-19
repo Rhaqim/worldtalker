@@ -1,0 +1,35 @@
+# Python project (Poetry)
+# Ignore virtual environments
+.venv/
+.env/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore Pytest cache
+.pytest_cache/
+
+# Ignore Poetry specific files
+poetry.lock
+*.toml
+
+# Golang project
+# Ignore Go build files
+bin/
+pkg/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore Go test binaries
+*.test
+
+# Ignore Go dependency directories
+vendor/
+
+# MacOS
+# Ignore system files
+.DS_Store
